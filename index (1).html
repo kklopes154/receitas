@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livro de Receitas - Sonhado Sabor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#f8f5f2] text-[#2d2926] font-raleway">
+
+  <!-- Cabeçalho -->
+  <header class="bg-[#e8c547] text-[#2d2926] p-6 text-center shadow">
+    <h1 class="text-4xl font-playfair font-bold">🍴 Sonhado Sabor</h1>
+    <p class="mt-2 text-lg">Seu livro de receitas online</p>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="flex flex-col md:flex-row">
+    
+    <!-- Menu Lateral -->
+    <aside class="w-full md:w-64 bg-white shadow-md p-4">
+      <h2 class="text-xl font-semibold mb-4">Categorias</h2>
+      <nav class="flex flex-col gap-2">
+        <button class="category-tab active p-2 rounded" data-category="todas">📖 Todas</button>
+        <button class="category-tab p-2 rounded" data-category="sopa">🍲 Sopas</button>
+        <button class="category-tab p-2 rounded" data-category="carne">🥩 Carnes</button>
+        <button class="category-tab p-2 rounded" data-category="salada">🥗 Saladas</button>
+        <button class="category-tab p-2 rounded" data-category="sobremesa">🍰 Sobremesas</button>
+        <button class="category-tab p-2 rounded" data-category="massa">🥖 Massas</button>
+      </nav>
+    </aside>
+
+    <!-- Lista de Receitas -->
+    <main class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Sobremesa -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="sobremesa">
+        <img src="imagens/bolo.png" alt="Bolo de Chocolate" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Bolo de Chocolate</h3>
+          <p class="mt-2 text-sm">Um bolo fofinho e delicioso para qualquer ocasião.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐⭐☆☆</p>
+        </div>
+      </article>
+
+      <!-- Massa -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="massa">
+        <img src="imagens/lasanha.png" alt="Lasanha de Frango" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Lasanha de Frango</h3>
+          <p class="mt-2 text-sm">Cremosa e gratinada, perfeita para o almoço de domingo.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐⭐⭐☆</p>
+        </div>
+      </article>
+
+      <!-- Salada -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="salada">
+        <img src="imagens/salada.png" alt="Salada Fresca" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Salada Fresca</h3>
+          <p class="mt-2 text-sm">Leve e saudável, ideal para dias quentes.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐☆☆☆</p>
+        </div>
+      </article>
+
+      <!-- Sopa -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="sopa">
+        <img src="imagens/sopa.png" alt="Sopa de Legumes" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Sopa de Legumes</h3>
+          <p class="mt-2 text-sm">Quentinha e nutritiva para os dias frios.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐⭐☆☆</p>
+        </div>
+      </article>
+
+      <!-- Carne -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="carne">
+        <img src="imagens/carne.png" alt="Carne Assada" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Carne Assada</h3>
+          <p class="mt-2 text-sm">Temperada e assada lentamente para soltar todo o sabor.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐⭐⭐☆</p>
+        </div>
+      </article>
+
+      <!-- Sobremesa -->
+      <article class="bg-white rounded-lg shadow-md overflow-hidden menu-item" data-category="sobremesa">
+        <img src="imagens/pave.png" alt="Pavê de Morango" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold font-playfair">Pavê de Morango</h3>
+          <p class="mt-2 text-sm">Clássico pavê com camadas de morango e creme.</p>
+          <p class="mt-2 difficulty-stars">⭐⭐⭐☆☆</p>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-[#2d2926] text-white text-center p-4 mt-6">
+    <p>Feito com ❤️ por Gabriel e Rafael
+    
+    </p>
+  </footer>
+
+  <script src="receitas.js"></script>
+</body>
+</html>
